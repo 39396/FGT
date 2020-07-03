@@ -1,0 +1,19 @@
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema Namespace="ZGKTEST1_SRV" xml:lang="hu" sap:schema-version="1" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+			<EntityType Name="ZGKTEST1" sap:content-version="1">
+				<Key><PropertyRef Name="Mandt"/><PropertyRef Name="Suppliername"/></Key><Property Name="Mandt" Type="Edm.String" Nullable="false" MaxLength="3" sap:unicode="false" sap:label="Mandant" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Suppliername" Type="Edm.String" Nullable="false" MaxLength="80" sap:unicode="false" sap:label="Teljes név"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Street" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Utca/házszám" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Housenumber" Type="Edm.String" Nullable="false" MaxLength="5" sap:unicode="false" sap:label="Házszám" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zipcode" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="Postai ir.szám"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="City" Type="Edm.String" Nullable="false" MaxLength="25" sap:unicode="false" sap:label="Helység" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Country" Type="Edm.String" Nullable="false" MaxLength="30" sap:unicode="false" sap:label="Szöveg" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Url" Type="Edm.String" Nullable="false" MaxLength="132" sap:unicode="false" sap:label="URL" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Twitter" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="Magyarázat" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityContainer Name="ZGKTEST1_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="ZGKTEST1Set" EntityType="ZGKTEST1_SRV.ZGKTEST1" sap:creatable="false" sap:updatable="false" sap:deletable="false"
+				sap:pageable="false" sap:content-version="1"/></EntityContainer><atom:link rel="self" href="./sap/ZGKTEST1_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/><atom:link rel="latest-version" href="./sap/ZGKTEST1_SRV/$metadata" xmlns:atom="http://www.w3.org/2005/Atom"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
